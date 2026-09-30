@@ -6,7 +6,7 @@ const server = http.createServer((req, res) => {
     res.end(`
         <html>
             <head>
-                <title>Hello World</title>
+                <title>Hello World updated</title>
             </head>
             <body>
                 <h1>Hello World - Updated!</h1>
