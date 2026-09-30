@@ -13,7 +13,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo '===== TEST ====='
-                sh 'node --check app.js'
+                sh 'docker run --rm node-hello-world:latest node --check app.js'
             }
         }
 
@@ -41,3 +41,4 @@ pipeline {
         }
     }
 }
+
